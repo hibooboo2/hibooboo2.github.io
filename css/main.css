@@ -41,3 +41,11 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+img {
+    width: 10em;
+}
+
+img[alt=Chewie]{
+    width: 20em;
+}
