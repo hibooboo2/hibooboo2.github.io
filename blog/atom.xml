@@ -1,26 +1,43 @@
----
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>James Jeffrey's Blog</title>
     <link href="http://hibooboo2.github.io/blog/atom.xml" rel="self"/>
     <link href="http://hibooboo2.github.io/blog"/>
-    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <updated>2016-01-30T16:22:19-07:00</updated>
     <id>http://hibooboo2.github.io/blog</id>
     <author>
         <name>Hank Quinlan</name>
         <email>wizardofmath@gmail.com</email>
     </author>
 
-    {% for post in site.posts %}
+    
         <entry>
-            <title>{{ post.title }}</title>
-            <link href="http://hibooboo2.github.io{{ post.url }}"/>
-            <updated>{{ post.date | date_to_xmlschema }}</updated>
-            <id>http://hibooboo2.github.io/{{ post.id }}</id>
-            <content type="html">{{ post.content | xml_escape }}</content>
+            <title>My Dogs</title>
+            <link href="http://hibooboo2.github.io/2016/01/30/Han-Chewie-Leia.html"/>
+            <updated>2016-01-30T00:00:00-07:00</updated>
+            <id>http://hibooboo2.github.io//2016/01/30/Han-Chewie-Leia</id>
+            <content type="html">&lt;p&gt;My wife and I have 3 wonderful dogs: Leia, Han, and Chewie. They are the joys of our lives,
+and if we ever lost them, we would be crushed. If you are reading this because you found them
+and saw the link to this post, please call:&lt;/p&gt;
+
+&lt;p&gt;Me: &lt;strong&gt;&lt;em&gt;(480)-255-0632&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;My Wife: &lt;strong&gt;&lt;em&gt;(480)-980-1012&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;leia&quot;&gt;Leia&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://scontent.fphx1-2.fna.fbcdn.net/hphotos-xlf1/t31.0-8/12370874_10207945429779977_5148230316848674149_o.jpg&quot; alt=&quot;Leia&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;han&quot;&gt;Han&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://scontent.fphx1-2.fna.fbcdn.net/hphotos-xat1/v/t1.0-9/12140673_10207663811699701_9117982210654487218_n.jpg?oh=630b852c3a51be55541dc26b366876da&amp;amp;oe=573FBBBC&quot; alt=&quot;Han&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chewie&quot;&gt;Chewie&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://scontent.fphx1-2.fna.fbcdn.net/hphotos-xpt1/t31.0-8/11937016_10207260788744379_4139927629719282354_o.jpg&quot; alt=&quot;Chewie&quot; /&gt;&lt;/p&gt;
+</content>
         </entry>
-    {% endfor %}
+    
 
 </feed>
